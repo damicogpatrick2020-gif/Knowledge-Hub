@@ -1,6 +1,6 @@
 let knowledge = [];
 
-fetch('knowledge.json')
+fetch('json.data.txt')
     .then(response => response.json())
     .then(data => {
         knowledge = data;
