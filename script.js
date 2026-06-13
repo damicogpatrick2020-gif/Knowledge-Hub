@@ -15,8 +15,8 @@ searchBar.addEventListener('input', function() {
 
     const filtered = knowledge.filter(item =>
         item.title.toLowerCase().includes(searchTerm) ||
-        item.category.toLowerCase().includes(searchTerm) ||
-        item.content.toLowerCase().includes(searchTerm)
+        item.tags.some(tag => tag.toLowerCase().includes(searchTerm)) ||
+        item.description.toLowerCase().includes(searchTerm)
     );
 
     displayResults(filtered);
@@ -34,8 +34,9 @@ function displayResults(results) {
         container.innerHTML += `
             <div class="card">
                 <h3>${item.title}</h3>
-                <p><strong>Category:</strong> ${item.category}</p>
-                <p>${item.content}</p>
+                <p><strong>Tags:</strong> ${item.tags.join(', ')}</p>
+                <p>${item.description}</p>
+                <a href="${item.link}" target="_blank">Learn More</a>
             </div>
         `;
 
