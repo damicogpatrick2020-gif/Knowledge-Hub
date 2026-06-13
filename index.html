@@ -6,15 +6,30 @@
 </head>
 <body>
 
-    <h1>Knowledge Hub</h1>
+    <div class="container">
+        <header>
+            <h1>🎓 Knowledge Hub</h1>
+            <p class="subtitle">Comprehensive Knowledge Base & Support Documentation</p>
+        </header>
 
-    <input
-        type="text"
-        id="searchBar"
-        placeholder="Search knowledge articles..."
-    >
+        <div class="search-container">
+            <input
+                type="text"
+                id="searchBar"
+                placeholder="🔍 Search knowledge articles..."
+            >
+        </div>
 
-    <div id="results"></div>
+        <div id="results" class="results-grid"></div>
+    </div>
+
+    <!-- Modal for detailed view -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 
