@@ -5,112 +5,504 @@
     "description": "Steps for customers to reset their password and update email address or login username through the rainGO app.",
     "tags": ["password", "reset", "login", "raingo", "email", "username", "account"],
     "image": "https://raw.githubusercontent.com/damicogpatrick2020-gif/Knowledge-Hub/main/images/action-station-reset-username.png",
-    "thumbnail": "https://raw.githubusercontent.com/damicogpatrick2020-gif/Knowledge-Hub/main/images/action-station-reset-username-thumb.png",
-    "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Accou.aspx",
     "content": {
-      "overview": "Customer Request: Customer is requesting to update registered email address or change login username",
-      "complianceNotice": "Security & Compliance Notice (POPIA): Due to POPIA (Protection of Personal Information Act) compliance, we are not allowed to directly update or change email addresses or login usernames on behalf of the customer. Instead, we must verify ownership and guide the customer through a secure self-service process.",
+      "overview": "Customer Request: Customer is requesting to update registered email address or change login username through the rainGO app's action station interface.",
+      "complianceNotice": "⚠️ Security & Compliance Notice (POPIA): Due to POPIA (Protection of Personal Information Act) compliance, we are not allowed to directly update or change email addresses or login usernames on behalf of the customer. Instead, we must verify ownership and guide the customer through a secure self-service process.",
       "agentActionSteps": [
-        "Go to action station",
-        "Select Reset Username option",
-        "Send reset username link to customer",
-        "Guide customer through self-service process"
+        "Step 1: Greet customer and acknowledge their request",
+        "Step 2: Verify customer identity and account ownership",
+        "Step 3: Direct customer to the action station",
+        "Step 4: Guide them to select Reset Username or email update option",
+        "Step 5: Ensure customer receives reset link successfully",
+        "Step 6: Confirm customer can access self-service portal",
+        "Step 7: Provide support contact if customer encounters issues"
       ],
       "processFlow": [
         {
-          "step": "action station",
-          "options": ["process", "account options", "payment plans"]
+          "step": "1. Action Station",
+          "description": "Main hub for customer actions",
+          "options": ["Process", "Account Options", "Payment Plans"]
         },
         {
-          "step": "reset password"
+          "step": "2. Account Options",
+          "description": "Select account management options"
         },
         {
-          "step": "reset username"
+          "step": "3. Reset Password",
+          "description": "Option to reset account password securely"
         },
         {
-          "step": "edit profile"
+          "step": "4. Reset Username",
+          "description": "Send secure link to update username"
         },
         {
-          "step": "change payment date"
+          "step": "5. Edit Profile",
+          "description": "Update profile information including email"
         },
         {
-          "step": "create debit note"
-        },
-        {
-          "step": "notification preferences"
+          "step": "6. Confirm Changes",
+          "description": "Verify and confirm all changes made"
         }
+      ],
+      "keyPoints": [
+        "Always verify customer identity before proceeding",
+        "Send reset link via registered email",
+        "Customer must complete reset within 24 hours",
+        "Username must be 6-20 characters",
+        "Email address must be unique in system",
+        "Inform customer about security implications"
       ]
     }
   },
   {
     "id": 2,
     "title": "Order Management",
-    "description": "This article covers order-related enquiries for new service orders, including order statuses, delivery updates, order cancellations, returns, and RICA-related delivery issues.",
-    "tags": ["Order", "RICA", "Order cancellation", "Delivery Updates"],
-    "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Order-Cancellation-Request.aspx"
+    "description": "Complete guide for handling order-related enquiries including new service orders, order statuses, delivery updates, cancellations, returns, and RICA-related delivery issues.",
+    "tags": ["Order", "RICA", "Order cancellation", "Delivery", "Returns", "New Service"],
+    "image": "https://raw.githubusercontent.com/damicogpatrick2020-gif/Knowledge-Hub/main/images/order-management.png",
+    "content": {
+      "overview": "This comprehensive guide covers all aspects of order management from order creation to delivery and returns handling.",
+      "sections": [
+        {
+          "title": "Order Statuses",
+          "items": [
+            "Pending: Order received, awaiting processing",
+            "Processing: Order being prepared",
+            "Shipped: Order in transit",
+            "Delivered: Order successfully delivered",
+            "Cancelled: Order cancelled by customer or system",
+            "On Hold: Order temporarily paused"
+          ]
+        },
+        {
+          "title": "New Service Orders",
+          "items": [
+            "Verify customer eligibility",
+            "Check service availability in area",
+            "Confirm installation date and time",
+            "Send pre-installation instructions",
+            "Schedule technician visit",
+            "Confirm activation after installation"
+          ]
+        },
+        {
+          "title": "Delivery Updates",
+          "items": [
+            "Send tracking information to customer",
+            "Provide estimated delivery window",
+            "Update status every 24 hours",
+            "Notify customer of any delays",
+            "Confirm delivery appointment",
+            "Request feedback after delivery"
+          ]
+        },
+        {
+          "title": "Order Cancellations",
+          "items": [
+            "Check cancellation eligibility",
+            "Verify customer identity",
+            "Process refund if applicable",
+            "Update order status to cancelled",
+            "Send cancellation confirmation",
+            "Offer alternative solutions"
+          ]
+        },
+        {
+          "title": "Returns & Exchanges",
+          "items": [
+            "Verify return eligibility (30-day window)",
+            "Inspect returned item condition",
+            "Process refund or exchange",
+            "Issue return shipping label",
+            "Update inventory",
+            "Send return confirmation"
+          ]
+        },
+        {
+          "title": "RICA Delivery Issues",
+          "items": [
+            "RICA (Regulation of Interception of Communications Act) compliance required",
+            "Verify customer SIM activation",
+            "Ensure proper documentation",
+            "Handle expedited delivery if needed",
+            "Maintain delivery records",
+            "Comply with all regulatory requirements"
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Always verify customer details before proceeding",
+        "Check order history for patterns",
+        "Escalate complex issues to supervisor",
+        "Maintain detailed order notes",
+        "Keep customer informed at all times"
+      ]
+    }
   },
   {
     "id": 3,
     "title": "Promise to Pay",
-    "description": "Procedure for handling billing and payment options concerns.",
-    "tags": ["billing", "payment", "Payment arrangement"],
-    "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Promise-to-Pay(2).aspx"
+    "description": "Complete procedure for handling billing and payment options concerns including payment arrangements and missed payments.",
+    "tags": ["billing", "payment", "Payment arrangement", "Collections", "Finance"],
+    "image": "https://raw.githubusercontent.com/damicogpatrick2020-gif/Knowledge-Hub/main/images/promise-to-pay.png",
+    "content": {
+      "overview": "Guide for agents to set up payment arrangements with customers who need flexible payment options or have arrears.",
+      "sections": [
+        {
+          "title": "Payment Arrangement Eligibility",
+          "items": [
+            "Customer account must be in good standing initially",
+            "Maximum of 3 arrangements per 12 months",
+            "Minimum arrangement period: 5 business days",
+            "Maximum arrangement period: 90 days",
+            "Customer must have no more than 2 missed promises"
+          ]
+        },
+        {
+          "title": "Setting Up a Promise to Pay",
+          "items": [
+            "Step 1: Verify customer identity and account",
+            "Step 2: Discuss payment difficulties with customer",
+            "Step 3: Review account balance and history",
+            "Step 4: Calculate affordable payment amounts",
+            "Step 5: Agree on payment dates and amounts",
+            "Step 6: Confirm arrangement details",
+            "Step 7: Send written confirmation"
+          ]
+        },
+        {
+          "title": "Payment Options Available",
+          "items": [
+            "Lump sum payment: One-time full settlement",
+            "Split payments: Divide balance into 2-3 payments",
+            "Installment plan: Monthly payments over period",
+            "Automatic debit order: Automated recurring payments",
+            "Bank transfer: Direct bank-to-bank payments"
+          ]
+        },
+        {
+          "title": "Managing Payment Arrangements",
+          "items": [
+            "Monitor payment progress daily",
+            "Send reminders before due dates",
+            "Follow up on missed payments immediately",
+            "Document all customer communications",
+            "Escalate repeated defaults to collections",
+            "Review arrangement terms if customer struggles"
+          ]
+        },
+        {
+          "title": "Failed Promise to Pay",
+          "items": [
+            "Attempt contact within 24 hours",
+            "Offer alternative payment plan",
+            "Consider suspension of services if applicable",
+            "Escalate to collections department",
+            "Document all attempts and outcomes",
+            "Send final notice if required"
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Always treat customers with respect and empathy",
+        "Document every promise and agreement",
+        "Be clear about consequences of non-payment",
+        "Offer realistic payment terms",
+        "Follow regulatory and company policies"
+      ]
+    }
   },
   {
     "id": 4,
     "title": "Migration Order",
-    "description": "Migration orders are created when an existing customer upgrades or downgrades their current service or subscription. Orders processed for service changes will appear on the Order dashboard.",
-    "tags": ["Migration", "Down Grade", "Cancelling Downgrade"],
-    "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Migration-Order.aspx"
+    "description": "Complete guide for migration orders created when customers upgrade or downgrade their current service or subscription.",
+    "tags": ["Migration", "Upgrade", "Downgrade", "Service Change", "Subscription"],
+    "image": "https://raw.githubusercontent.com/damicogpatrick2020-gif/Knowledge-Hub/main/images/migration-order.png",
+    "content": {
+      "overview": "Migration orders are created when an existing customer upgrades or downgrades their current service or subscription. This guide covers the complete migration process.",
+      "sections": [
+        {
+          "title": "Understanding Migration",
+          "items": [
+            "Upgrade: Customer moves to higher tier service",
+            "Downgrade: Customer moves to lower tier service",
+            "Lateral move: Customer changes to different plan at same tier",
+            "Service replacement: Customer switches service type",
+            "All changes processed through migration order system"
+          ]
+        },
+        {
+          "title": "Pre-Migration Steps",
+          "items": [
+            "Step 1: Review current service and contract terms",
+            "Step 2: Explain available upgrade/downgrade options",
+            "Step 3: Discuss pricing and contract changes",
+            "Step 4: Confirm customer eligibility",
+            "Step 5: Obtain customer authorization",
+            "Step 6: Schedule migration date"
+          ]
+        },
+        {
+          "title": "Upgrade Process",
+          "items": [
+            "Verify no outstanding balances",
+            "Check service availability",
+            "Process pricing adjustment (pro-rata if needed)",
+            "Schedule technology implementation",
+            "Send upgrade confirmation",
+            "Follow up post-activation",
+            "Ensure customer satisfaction"
+          ]
+        },
+        {
+          "title": "Downgrade Process",
+          "items": [
+            "Review contract termination clauses",
+            "Calculate credit/refund if applicable",
+            "Provide notice period if required",
+            "Schedule service reduction",
+            "Send downgrade confirmation",
+            "Backup customer data if necessary",
+            "Handle equipment returns"
+          ]
+        },
+        {
+          "title": "Migration Issues & Troubleshooting",
+          "items": [
+            "Service interruption: Escalate to technical team",
+            "Pricing disputes: Review contract terms",
+            "Contract issues: Consult legal/compliance",
+            "Customer dissatisfaction: Offer alternatives",
+            "Technical delays: Communicate timeline updates",
+            "Equipment problems: Arrange replacement"
+          ]
+        },
+        {
+          "title": "Post-Migration",
+          "items": [
+            "Confirm new service is active",
+            "Send welcome information for new service",
+            "Provide updated billing information",
+            "Schedule follow-up check-in",
+            "Address any customer concerns",
+            "Request satisfaction feedback"
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Always confirm customer wishes before processing",
+        "Maintain service during migration if possible",
+        "Document all agreements and changes",
+        "Follow migration policies strictly",
+        "Keep customers informed throughout process"
+      ]
+    }
   },
   {
     "id": 5,
     "title": "Simple Troubleshooting Steps",
-    "description": "This guide provides agents with a step-by-step process to troubleshoot customer reports of slow speeds, unstable connection, or no connectivity on the 5G service.",
-    "tags": ["Troubleshooting", "support", "Guide", "5G", "network", "account status", "online offline", "speeds", "wifi"],
+    "description": "Step-by-step process to troubleshoot customer reports of slow speeds, unstable connection, or no connectivity on the 5G service.",
+    "tags": ["Troubleshooting", "support", "5G", "network", "connectivity", "speeds", "wifi"],
     "image": "https://raw.githubusercontent.com/damicogpatrick2020-gif/Knowledge-Hub/main/images/troubleshooting-guide.png",
-    "sections": [
-      {
-        "step": "Account Status",
-        "description": "Check if the customer is normal or in arrears"
-      },
-      {
-        "step": "Online/Offline",
-        "description": "Check if the customers device is online or offline"
-      },
-      {
-        "step": "Regular vs Current Site",
-        "description": "Check if the customer is still on their regular site, and its status"
-      },
-      {
-        "step": "Speeds",
-        "description": "Check if the device is getting the speeds it should"
-      },
-      {
-        "step": "2.4GHz or 5GHz WiFi",
-        "description": "Check which wifi network the client device is connected to"
-      }
-    ],
-    "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Troubleshooting-Network(2).aspx"
+    "content": {
+      "overview": "This troubleshooting guide helps agents systematically diagnose and resolve common 5G connectivity and speed issues.",
+      "sections": [
+        {
+          "title": "Initial Customer Assessment",
+          "items": [
+            "Greet customer and acknowledge issue",
+            "Get detailed description of problem",
+            "Ask when issue started",
+            "Confirm if issue is constant or intermittent",
+            "Ask what customer has already tried",
+            "Note any error messages received"
+          ]
+        },
+        {
+          "title": "Step 1: Check Account Status",
+          "description": "Verify customer account and service status",
+          "items": [
+            "Check if account is active and in good standing",
+            "Verify if customer is on a high-speed data plan",
+            "Confirm no service suspension or limitations",
+            "Check account balance and payment status",
+            "Review account for any flags or holds",
+            "Action: If account issues found, resolve before continuing"
+          ]
+        },
+        {
+          "title": "Step 2: Check Device Online/Offline Status",
+          "description": "Verify device connectivity to network",
+          "items": [
+            "Confirm device is powered on",
+            "Check airplane mode is disabled",
+            "Verify device is connected to network",
+            "Check signal strength indicator",
+            "Look for 5G indicator on device",
+            "Action: Ask customer to restart device if no signal"
+          ]
+        },
+        {
+          "title": "Step 3: Check Site Connection Status",
+          "description": "Determine if customer is on correct site",
+          "items": [
+            "Confirm customer location",
+            "Verify customer is on their regular site",
+            "Check if customer has traveled to different location",
+            "Verify 5G site status and any outages",
+            "Check nearby alternative sites",
+            "Action: Guide customer to appropriate coverage area if needed"
+          ]
+        },
+        {
+          "title": "Step 4: Check Speed Performance",
+          "description": "Test actual speeds being received",
+          "items": [
+            "Ask customer to run speed test on device",
+            "Compare result to expected speeds for plan",
+            "Check for background apps using bandwidth",
+            "Verify no large downloads or updates running",
+            "Compare to historical speed data",
+            "Action: Investigate if speeds significantly below plan"
+          ]
+        },
+        {
+          "title": "Step 5: Check WiFi Connection Type",
+          "description": "Determine device WiFi connection",
+          "items": [
+            "Confirm if using 2.4GHz or 5GHz WiFi",
+            "Check signal strength for selected band",
+            "Suggest optimal band for location (2.4GHz = range, 5GHz = speed)",
+            "Verify no WiFi interference",
+            "Check other devices on same network",
+            "Action: Switch bands if experiencing poor performance"
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Follow steps in order systematically",
+        "Document all findings and actions taken",
+        "Escalate if issue persists after all steps",
+        "Provide clear instructions to customer",
+        "Remain patient and professional"
+      ]
+    }
   },
   {
     "id": 6,
     "title": "Troubleshooting Guide - Validate Account & Service",
-    "description": "Step-by-step troubleshooting guide for agents to identify and resolve customer connectivity issues on 5G service.",
+    "description": "Advanced step-by-step troubleshooting guide for agents to identify and resolve customer connectivity issues on 5G service.",
     "tags": ["Troubleshooting", "account", "service", "validate", "5G", "connectivity"],
     "image": "https://raw.githubusercontent.com/damicogpatrick2020-gif/Knowledge-Hub/main/images/troubleshooting-guide.png",
-    "sections": [
-      {
-        "step": "1. Validate Account & Service",
-        "description": "Perform basic check",
-        "details": [
-          "Confirm the customer address of use is correct and updated on the system",
-          "Verify the service policy is active (must be on High Speed)",
-          "Blank Policy or policy: -- follow no connection troubleshooting",
-          "Check for any active alarms/outages on nearby 5G sites"
-        ]
-      }
-    ],
-    "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Troubleshooting-Network(2).aspx"
+    "content": {
+      "overview": "In-depth troubleshooting for more complex 5G connectivity issues, focusing on account and service validation.",
+      "sections": [
+        {
+          "title": "1. Validate Account & Service - Basic Check",
+          "description": "Perform initial account and service validation",
+          "items": [
+            "✓ Confirm customer address of use is correct and updated on system",
+            "✓ Verify service policy is active (must be on High Speed)",
+            "✓ Check for blank policy or policy showing '--' (escalate immediately)",
+            "✓ Review for any service restrictions or limitations",
+            "✓ Confirm billing status is current",
+            "Action: Resolve any account issues before proceeding to technical troubleshooting"
+          ]
+        },
+        {
+          "title": "2. Check Active Alarms & Outages",
+          "description": "Verify no active network issues affecting customer",
+          "items": [
+            "✓ Check for active alarms on nearby 5G sites",
+            "✓ Review network maintenance schedules",
+            "✓ Verify coverage in customer location",
+            "✓ Check for any regional outages",
+            "✓ Review escalation tickets for same area",
+            "Action: If outage found, provide estimated time to resolution"
+          ]
+        },
+        {
+          "title": "3. Service Policy Verification",
+          "description": "Ensure customer has correct service plan",
+          "items": [
+            "✓ Confirm policy type matches customer expectations",
+            "✓ Check policy tier (Basic, Standard, Premium, etc.)",
+            "✓ Verify data allowance and speed limits",
+            "✓ Review any caps or throttling settings",
+            "✓ Confirm no plan changes pending",
+            "Action: Upgrade plan if needed, or explain current limitations"
+          ]
+        },
+        {
+          "title": "4. Device Compatibility Check",
+          "description": "Verify device supports 5G service",
+          "items": [
+            "✓ Confirm device is 5G-capable",
+            "✓ Check firmware/software is up to date",
+            "✓ Verify device is on approved list",
+            "✓ Check for known issues with device model",
+            "✓ Ensure SIM card is provisioned for 5G",
+            "Action: Recommend compatible device if needed"
+          ]
+        },
+        {
+          "title": "5. Network Connection Troubleshooting",
+          "description": "Diagnose network-level issues",
+          "items": [
+            "✓ Verify device registers on 5G network",
+            "✓ Check signal strength in area",
+            "✓ Test connection at different times",
+            "✓ Try manual network selection",
+            "✓ Attempt connection at different location",
+            "Action: If only works in specific area, site-specific issue"
+          ]
+        },
+        {
+          "title": "6. Performance Testing",
+          "description": "Measure actual service performance",
+          "items": [
+            "✓ Run speed test and document results",
+            "✓ Test upload and download separately",
+            "✓ Perform latency test",
+            "✓ Compare to expected speeds for plan",
+            "✓ Test with single active app",
+            "Action: If below plan minimums, escalate to technical team"
+          ]
+        },
+        {
+          "title": "7. Common Solutions",
+          "description": "Try these standard fixes",
+          "items": [
+            "✓ Restart device completely (power cycle)",
+            "✓ Toggle airplane mode on/off",
+            "✓ Manually select network operator",
+            "✓ Clear network cache/reset network settings",
+            "✓ Remove and reinsert SIM card",
+            "✓ Update device software if available",
+            "Action: Test after each step"
+          ]
+        },
+        {
+          "title": "8. Escalation Criteria",
+          "description": "When to escalate to technical team",
+          "items": [
+            "✗ Issue persists after all troubleshooting steps",
+            "✗ Speeds significantly below contracted amount",
+            "✗ Complete loss of signal in customer location",
+            "✗ Multiple areas affected (not just customer location)",
+            "✗ Intermittent connection drops",
+            "✗ Device not registering on 5G network"
+          ]
+        }
+      ],
+      "keyPoints": [
+        "Validate account first before technical troubleshooting",
+        "Check for network-wide issues",
+        "Document all test results",
+        "Try solutions in logical order",
+        "Know when to escalate",
+        "Keep customer informed throughout"
+      ]
+    }
   }
 ]
