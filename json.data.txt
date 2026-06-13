@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Request to Update Email Address / Login Username",
+    "description": "Steps for customers to reset their password through the rainGO app.",
+    "tags": ["password", "reset", "login", "raingo"],
+    "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Accou.aspx"
+  },
+  {
+    "id": 2,
+    "title": "Order Management",
+    "description": "This article covers order-related enquiries for new service orders, including order statuses, delivery updates, order cancellations, returns, and RICA-related delivery issues..",
+    "tags": ["Order", "RICA", "Order cancellation", "Delivery Updates"],
+    "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Order-Cancellation-Request.aspx"
+  },
+  {
+    "id": 3,
+    "title": "Promise to Pay",
+    "description": "Procedure for handling billing and payment options concerns.",
+    "tags": ["billing", "payment", "Payment arrangement"],
+    "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Promise-to-Pay(2).aspx"
+  },
+  {
+    "id": 4,
+    "title": "Migration Order",
+    "description": "Migration orders are created when an existing customer upgrades or downgrades their current service or subscription.
+Orders processed for service changes will appear on the Orders tab as.",
+    "tags": ["Migration", "Down Grade", "Cancelling Downgrade"],
+    "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Migration-Order.aspx"
+  },
+  {
+    "id": 5,
+    "title": "Simple Troubleshooting Steps",
+    "description": "This guide provides agents with a step-by-step process to troubleshoot customer reports of slow speeds, unstable connection, or no connectivity on the 5G service..",
+    "tags": ["Troubleshooting", "support", "Guide"],
+    "link": https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Troubleshooting-Network(2).aspx"
+  }
+]
