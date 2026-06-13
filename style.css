@@ -1,80 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
     padding: 20px;
     min-height: 100vh;
 }
 
-h1 {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
     text-align: center;
     color: white;
-    margin-bottom: 30px;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+    animation: slideDown 0.6s ease;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 1.1em;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+.search-container {
+    margin-bottom: 40px;
+    animation: slideUp 0.6s ease;
 }
 
 #searchBar {
     width: 100%;
     max-width: 800px;
     display: block;
-    margin: 0 auto 30px;
-    padding: 15px;
+    margin: 0 auto;
+    padding: 16px 20px;
     font-size: 16px;
     border: none;
-    border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
 }
 
 #searchBar:focus {
     outline: none;
     transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
 
-#results {
-    max-width: 900px;
-    margin: 0 auto;
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
 }
 
 .card {
     background: white;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.5s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.card-image.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .card h3 {
     margin: 0 0 10px 0;
     color: #11998e;
     font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.tag {
+    display: inline-block;
+    background: #e8f5f3;
+    color: #11998e;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 500;
 }
 
 .card p {
     margin: 10px 0;
-    color: #333;
+    color: #555;
     line-height: 1.6;
+    font-size: 0.95em;
+    flex-grow: 1;
+}
+
+.card-footer {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.card a,
+.card button {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
 }
 
 .card a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
     background: #11998e;
     color: white;
-    text-decoration: none;
-    border-radius: 20px;
-    transition: background 0.3s ease;
-    font-weight: bold;
+    display: inline-block;
+    flex: 1;
 }
 
 .card a:hover {
     background: #38ef7d;
+    color: #11998e;
+}
+
+.card button {
+    background: #f0f0f0;
+    color: #11998e;
+    border: 2px solid #11998e;
+}
+
+.card button:hover {
+    background: #11998e;
+    color: white;
+}
+
+/* No results message */
+#results > p {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    padding: 40px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 0;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #11998e;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #38ef7d;
+}
+
+#modalBody {
+    padding: 20px;
+}
+
+#modalBody h2 {
+    color: #11998e;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+#modalBody img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+#modalBody .compliance-notice {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#modalBody .action-steps,
+#modalBody .details-list {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+#modalBody ul {
+    margin-left: 20px;
+}
+
+#modalBody li {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+#modalBody section {
+    margin: 20px 0;
+}
+
+#modalBody h3 {
+    color: #11998e;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        width: 95%;
+        max-height: 95vh;
+    }
+
+    .card-footer {
+        flex-direction: column;
+    }
+
+    .card a,
+    .card button {
+        flex: none;
+    }
 }
