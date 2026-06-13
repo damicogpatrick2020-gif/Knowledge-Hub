@@ -30,8 +30,50 @@
   {
     "id": 5,
     "title": "Simple Troubleshooting Steps",
-    "description": "This guide provides agents with a step-by-step process to troubleshoot customer reports of slow speeds, unstable connection, or no connectivity on the 5G service. Follow these steps: Account Status - Check if the customer is normal or in arrears. Online/Offline - Check if the customers device is online or offline. Regular vs Current Site - Check if the customer is still on their regular site, and its status. Speeds - Check if the device is getting the speeds it should. 2.4GHz or 5GHz WiFi - Check which wifi network the client device is connected to.",
-    "tags": ["Troubleshooting", "support", "Guide", "5G", "network"],
+    "description": "This guide provides agents with a step-by-step process to troubleshoot customer reports of slow speeds, unstable connection, or no connectivity on the 5G service.",
+    "tags": ["Troubleshooting", "support", "Guide", "5G", "network", "account status", "online offline", "speeds", "wifi"],
+    "sections": [
+      {
+        "step": "Account Status",
+        "description": "Check if the customer is normal or in arrears"
+      },
+      {
+        "step": "Online/Offline",
+        "description": "Check if the customers device is online or offline"
+      },
+      {
+        "step": "Regular vs Current Site",
+        "description": "Check if the customer is still on their regular site, and its status"
+      },
+      {
+        "step": "Speeds",
+        "description": "Check if the device is getting the speeds it should"
+      },
+      {
+        "step": "2.4GHz or 5GHz WiFi",
+        "description": "Check which wifi network the client device is connected to"
+      }
+    ],
+    "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Troubleshooting-Network(2).aspx"
+  },
+  {
+    "id": 6,
+    "title": "Troubleshooting Guide - Validate Account & Service",
+    "description": "Step-by-step troubleshooting guide for agents to identify and resolve customer connectivity issues on 5G service.",
+    "tags": ["Troubleshooting", "account", "service", "validate", "5G", "connectivity"],
+    "sections": [
+      {
+        "step": "1. Validate Account & Service",
+        "description": "Perform basic check",
+        "details": [
+          "Confirm the customer address of use is correct and updated on the system",
+          "Verify the service policy is active (must be on High Speed)",
+          "Blank Policy or policy: -- follow no connection troubleshooting",
+          "Check for any active alarms/outages on nearby 5G sites"
+        ]
+      }
+    ],
+    "image": "https://raw.githubusercontent.com/damicogpatrick2020-gif/Knowledge-Hub/main/images/troubleshooting-guide.png",
     "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Troubleshooting-Network(2).aspx"
   }
 ]
