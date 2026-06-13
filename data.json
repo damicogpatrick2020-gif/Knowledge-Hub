@@ -2,9 +2,45 @@
   {
     "id": 1,
     "title": "Request to Update Email Address / Login Username",
-    "description": "Steps for customers to reset their password through the rainGO app.",
-    "tags": ["password", "reset", "login", "raingo"],
-    "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Accou.aspx"
+    "description": "Steps for customers to reset their password and update email address or login username through the rainGO app.",
+    "tags": ["password", "reset", "login", "raingo", "email", "username", "account"],
+    "image": "https://raw.githubusercontent.com/damicogpatrick2020-gif/Knowledge-Hub/main/images/action-station-reset-username.png",
+    "thumbnail": "https://raw.githubusercontent.com/damicogpatrick2020-gif/Knowledge-Hub/main/images/action-station-reset-username-thumb.png",
+    "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Accou.aspx",
+    "content": {
+      "overview": "Customer Request: Customer is requesting to update registered email address or change login username",
+      "complianceNotice": "Security & Compliance Notice (POPIA): Due to POPIA (Protection of Personal Information Act) compliance, we are not allowed to directly update or change email addresses or login usernames on behalf of the customer. Instead, we must verify ownership and guide the customer through a secure self-service process.",
+      "agentActionSteps": [
+        "Go to action station",
+        "Select Reset Username option",
+        "Send reset username link to customer",
+        "Guide customer through self-service process"
+      ],
+      "processFlow": [
+        {
+          "step": "action station",
+          "options": ["process", "account options", "payment plans"]
+        },
+        {
+          "step": "reset password"
+        },
+        {
+          "step": "reset username"
+        },
+        {
+          "step": "edit profile"
+        },
+        {
+          "step": "change payment date"
+        },
+        {
+          "step": "create debit note"
+        },
+        {
+          "step": "notification preferences"
+        }
+      ]
+    }
   },
   {
     "id": 2,
@@ -23,7 +59,7 @@
   {
     "id": 4,
     "title": "Migration Order",
-    "description": "Migration orders are created when an existing customer upgrades or downgrades their current service or subscription. Orders processed for service changes will appear on the Order Portal.",
+    "description": "Migration orders are created when an existing customer upgrades or downgrades their current service or subscription. Orders processed for service changes will appear on the Order dashboard.",
     "tags": ["Migration", "Down Grade", "Cancelling Downgrade"],
     "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Migration-Order.aspx"
   },
@@ -32,6 +68,7 @@
     "title": "Simple Troubleshooting Steps",
     "description": "This guide provides agents with a step-by-step process to troubleshoot customer reports of slow speeds, unstable connection, or no connectivity on the 5G service.",
     "tags": ["Troubleshooting", "support", "Guide", "5G", "network", "account status", "online offline", "speeds", "wifi"],
+    "image": "https://raw.githubusercontent.com/damicogpatrick2020-gif/Knowledge-Hub/main/images/troubleshooting-guide.png",
     "sections": [
       {
         "step": "Account Status",
@@ -61,6 +98,7 @@
     "title": "Troubleshooting Guide - Validate Account & Service",
     "description": "Step-by-step troubleshooting guide for agents to identify and resolve customer connectivity issues on 5G service.",
     "tags": ["Troubleshooting", "account", "service", "validate", "5G", "connectivity"],
+    "image": "https://raw.githubusercontent.com/damicogpatrick2020-gif/Knowledge-Hub/main/images/troubleshooting-guide.png",
     "sections": [
       {
         "step": "1. Validate Account & Service",
@@ -73,7 +111,6 @@
         ]
       }
     ],
-    "image": "https://raw.githubusercontent.com/damicogpatrick2020-gif/Knowledge-Hub/main/images/troubleshooting-guide.png",
     "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Troubleshooting-Network(2).aspx"
   }
 ]
