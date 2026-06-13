@@ -1,10 +1,21 @@
 let knowledge = [];
 
 fetch('data.json')
-    .then(response => response.json())
+    .then(response => {
+        console.log('Fetch response status:', response.status);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
+        console.log('Data loaded:', data);
         knowledge = data;
         displayResults(knowledge);
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+        document.getElementById('results').innerHTML = '<p style="color: red;">Error loading data. Check console for details.</p>';
     });
 
 const searchBar = document.getElementById('searchBar');
@@ -28,6 +39,11 @@ function displayResults(results) {
     const container = document.getElementById('results');
 
     container.innerHTML = '';
+
+    if (results.length === 0) {
+        container.innerHTML = '<p>No results found</p>';
+        return;
+    }
 
     results.forEach(item => {
 
