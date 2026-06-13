@@ -23,15 +23,15 @@
   {
     "id": 4,
     "title": "Migration Order",
-    "description": "Migration orders are created when an existing customer upgrades or downgrades their current service or subscription. Orders processed for service changes will appear on the Orders tab.",
+    "description": "Migration orders are created when an existing customer upgrades or downgrades their current service or subscription. Orders processed for service changes will appear on the Order Portal.",
     "tags": ["Migration", "Down Grade", "Cancelling Downgrade"],
     "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Migration-Order.aspx"
   },
   {
     "id": 5,
     "title": "Simple Troubleshooting Steps",
-    "description": "This guide provides agents with a step-by-step process to troubleshoot customer reports of slow speeds, unstable connection, or no connectivity on the 5G service.",
-    "tags": ["Troubleshooting", "support", "Guide"],
+    "description": "This guide provides agents with a step-by-step process to troubleshoot customer reports of slow speeds, unstable connection, or no connectivity on the 5G service. Follow these steps: Account Status - Check if the customer is normal or in arrears. Online/Offline - Check if the customers device is online or offline. Regular vs Current Site - Check if the customer is still on their regular site, and its status. Speeds - Check if the device is getting the speeds it should. 2.4GHz or 5GHz WiFi - Check which wifi network the client device is connected to.",
+    "tags": ["Troubleshooting", "support", "Guide", "5G", "network"],
     "link": "https://netorgft14400970.sharepoint.com/sites/rainxPhilippines2/SitePages/Troubleshooting-Network(2).aspx"
   }
 ]
